@@ -1,0 +1,49 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+
+<http://colin.kinlo.ch/lv2/rust/>
+  a doap:Project ;
+  lv2:symbol "lv2rs" ;
+  doap:name "LV2 Rust Examples" ;
+  doap:shortdesc "LV2 example modules implemented in rust." ;
+  doap:homepage <https://colin.kinlo.ch/lv2/rust/> ;
+  doap:maintainer [
+    foaf:name "Colin Kinloch" ;
+    foaf:mbox <mailto:colin@kinlo.ch>
+  ] .
+
+<http://colin.kinlo.ch/lv2/rust/amp>
+  a lv2:Plugin ;
+  lv2:binary <libexamples.so> ;
+  rdfs:seeAlso <amp.ttl> .
+
+<http://colin.kinlo.ch/lv2/rust/osc>
+  a lv2:Plugin ;
+  lv2:binary <libexamples.so> ;
+  rdfs:seeAlso <osc.ttl> .
+
+<http://colin.kinlo.ch/lv2/rust/quant>
+  a lv2:Plugin ;
+  lv2:binary <libexamples.so> ;
+  rdfs:seeAlso <quant.ttl> .
+
+<http://colin.kinlo.ch/lv2/rust/midigate>
+  a lv2:Plugin ;
+  lv2:binary <libexamples.so> ;
+  rdfs:seeAlso <midigate.ttl> .
+
+<http://colin.kinlo.ch/lv2/rust/scope>
+  a lv2:Plugin ;
+  lv2:binary <libexamples.so> ;
+  rdfs:seeAlso <scope.ttl> .
+<http://colin.kinlo.ch/lv2/rust/scope#ui>
+  a ui:Gtk3UI ;
+  ui:binary <libexamples.so> ;
+  rdfs:seeAlso <scope.ttl> .
+
+<http://colin.kinlo.ch/lv2/rust/divider>
+  a lv2:Plugin ;
+  lv2:binary <libexamples.so> ;
+  rdfs:seeAlso <divider.ttl> .

@@ -1,0 +1,33 @@
+@prefix doap:  <http://usefulinc.com/ns/doap#> .
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix units: <http://lv2plug.in/ns/extensions/units#> .
+
+<http://colin.kinlo.ch/lv2/rust/quant>
+  a lv2:Plugin ;
+  lv2:project <http://colin.kinlo.ch/lv2/rust/> ;
+  doap:name "Quantisater" ;
+  doap:description "Quantises" ;
+
+  lv2:port [
+    a lv2:ControlPort ,
+      lv2:InputPort ;
+    lv2:index 0 ;
+    lv2:symbol "step_size" ;
+    lv2:name "Step size" ;
+    lv2:default 0.01 ;
+    lv2:minimum 0.0 ;
+    lv2:maximum 1.0 ;
+    units:unit units:hz
+  ] , [
+    a lv2:AudioPort ,
+      lv2:InputPort ;
+    lv2:index 1 ;
+    lv2:symbol "input" ;
+    lv2:name "Input"
+  ] , [
+    a lv2:AudioPort ,
+      lv2:OutputPort ;
+    lv2:index 2 ;
+    lv2:symbol "output" ;
+    lv2:name "Output"
+  ] .

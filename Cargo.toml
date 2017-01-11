@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "lv2core",
+    "atom",
+    "midi",
+    "log",
+    "examples",
+]
+

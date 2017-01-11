@@ -1,0 +1,8 @@
+[package]
+name = "log"
+version = "0.1.0"
+authors = ["Colin Kinloch <colin@kinlo.ch>"]
+
+[dependencies]
+urid = { version = "0.1.0", path = "../urid" }
+lazy_static = "0.1"

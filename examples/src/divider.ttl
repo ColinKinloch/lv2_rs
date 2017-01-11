@@ -1,0 +1,42 @@
+@prefix doap:  <http://usefulinc.com/ns/doap#> .
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix units: <http://lv2plug.in/ns/extensions/units#> .
+
+<http://colin.kinlo.ch/lv2/rust/divider>
+  a lv2:Plugin, lv2:OscillatorPlugin ;
+  lv2:project <http://colin.kinlo.ch/lv2/rust/> ;
+  doap:name "Divider" ;
+  doap:description "Divider of time" ;
+
+  lv2:port [
+    a lv2:AudioPort ,
+      lv2:InputPort ;
+    lv2:index 0 ;
+    lv2:symbol "input" ;
+    lv2:name "Input"
+  ] , [
+    a lv2:AudioPort ,
+      lv2:OutputPort ;
+    lv2:index 1 ;
+    lv2:symbol "second" ;
+    lv2:name "2nd" ;
+    lv2:shortName "2nd"
+  ] , [
+    a lv2:AudioPort ,
+      lv2:OutputPort ;
+    lv2:index 2 ;
+    lv2:symbol "third" ;
+    lv2:name "3rd"
+  ] , [
+    a lv2:AudioPort ,
+      lv2:OutputPort ;
+    lv2:index 3 ;
+    lv2:symbol "fifth" ;
+    lv2:name "5th"
+  ] , [
+    a lv2:AudioPort ,
+      lv2:OutputPort ;
+    lv2:index 4 ;
+    lv2:symbol "seventh" ;
+    lv2:name "7th"
+  ] .

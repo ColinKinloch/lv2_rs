@@ -1,0 +1,16 @@
+[package]
+name = "examples"
+version = "0.1.0"
+authors = ["Colin Kinloch <colin@kinlo.ch>"]
+
+
+[lib]
+crate-type = ["dylib"]
+
+[dependencies]
+rand = "0.3"
+lv2core = { version = "0.1.0", path = "../lv2core" }
+atom = { version = "0.1.0", path = "../atom" }
+urid = { version = "0.1.0", path = "../urid" }
+log = { version = "0.1.0", path = "../log" }
+midi = { version = "0.1.0", path = "../midi" }
