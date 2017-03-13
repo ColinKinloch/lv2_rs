@@ -16,34 +16,34 @@
 
 <http://colin.kinlo.ch/lv2/rust/amp>
   a lv2:Plugin ;
-  lv2:binary <libexamples.so> ;
+  lv2:binary <{{so}}> ;
   rdfs:seeAlso <amp.ttl> .
 
 <http://colin.kinlo.ch/lv2/rust/osc>
   a lv2:Plugin ;
-  lv2:binary <libexamples.so> ;
+  lv2:binary <{{so}}> ;
   rdfs:seeAlso <osc.ttl> .
 
 <http://colin.kinlo.ch/lv2/rust/quant>
   a lv2:Plugin ;
-  lv2:binary <libexamples.so> ;
+  lv2:binary <{{so}}> ;
   rdfs:seeAlso <quant.ttl> .
 
 <http://colin.kinlo.ch/lv2/rust/midigate>
   a lv2:Plugin ;
-  lv2:binary <libexamples.so> ;
+  lv2:binary <{{so}}> ;
   rdfs:seeAlso <midigate.ttl> .
 
 <http://colin.kinlo.ch/lv2/rust/scope>
   a lv2:Plugin ;
-  lv2:binary <libexamples.so> ;
+  lv2:binary <{{so}}> ;
   rdfs:seeAlso <scope.ttl> .
 <http://colin.kinlo.ch/lv2/rust/scope#ui>
   a ui:Gtk3UI ;
-  ui:binary <libexamples.so> ;
+  ui:binary <{{so}}> ;
   rdfs:seeAlso <scope.ttl> .
 
 <http://colin.kinlo.ch/lv2/rust/divider>
   a lv2:Plugin ;
-  lv2:binary <libexamples.so> ;
+  lv2:binary <{{so}}> ;
   rdfs:seeAlso <divider.ttl> .

@@ -2,10 +2,13 @@
 name = "examples"
 version = "0.1.0"
 authors = ["Colin Kinloch <colin@kinlo.ch>"]
-
+build = "build.rs"
 
 [lib]
 crate-type = ["dylib"]
+
+[build-dependencies]
+handlebars = "0.25.1"
 
 [dependencies]
 rand = "0.3"

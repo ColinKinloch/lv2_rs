@@ -10,6 +10,7 @@ cd $F
 echo $N
 cargo build
 mkdir -p $OUT
+cp $TARGET/*.ttl $OUT
 cp ./src/*.ttl $OUT
-cp $TARGET/lib$N.so $OUT
+cp ${TARGET}/lib${N}.{so,dylib,dll} "${OUT}"
 cd $BASE
