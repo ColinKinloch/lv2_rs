@@ -125,7 +125,8 @@ macro_rules! lv2_descriptor {
         static mut MODULES: &'static [$crate::Descriptor] = &[
             $(
                 $crate::Descriptor {
-                    uri: $uri as *const u8 as *const i8,
+                    // HACK: arm require strings to be i8 rather than u8
+                    uri: $uri as *const _ as *const _,
                     instantiate: <$plugin>::instantiate,
                     connect_port: <$plugin>::connect_port,
                     activate: <$plugin>::activate,
