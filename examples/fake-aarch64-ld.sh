@@ -40,4 +40,4 @@ echo "sysroot: ${ANDROID_SYSROOT}"
 
 "${ANDROID_TOOLCHAIN}/aarch64-linux-android-gcc" \
   --sysroot="${ANDROID_SYSROOT}" -L "${ANDROID_CXX_LIBS}" "${@}" -lc++ \
-  -o "${TARGET_DIR}/libvr_music.so" -shared && touch "${TARGET_DIR}/vr_music"
+  -o "${TARGET_DIR}/libexamples.so" -shared && touch "${TARGET_DIR}/examples"
